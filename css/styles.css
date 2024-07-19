@@ -1,0 +1,267 @@
+/* Import a Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  background-color: #010e1b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #020f1c;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ensure proper sizing for paragraphs */
+/* Specific styling for the paragraph directly after h1 */
+main h1 + p {
+  font-size: 1em; /* Adjust as needed */
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #1d72b8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #155a8a;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Experience & Education */
+.experience-section,
+.education-section {
+  background-color: #021027;
+  border: 1px solid #1d72b8;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* About Page */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-photo {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.intro {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #021027;
+  border: 1px solid #1d72b8;
+  border-radius: 5px;
+}
+
+.projects,
+.testimonials,
+.cta,
+.skills-summary,
+.blog-news {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #021027;
+  border: 1px solid #1d72b8;
+  border-radius: 5px;
+}
+
+.project,
+.post {
+  margin-bottom: 15px;
+}
+
+/* Enhanced Blockquotes */
+
+.cta a {
+  color: #1d72b8;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+/* Enhanced Skills List */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.skills li {
+  background-color: #1d72b8;
+  color: #f4f4f4;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.1em;
+  list-style: none;
+  text-align: center;
+  width: 150px; /* Adjust as needed */
+  margin: 10px;
+}
+
+#typing-text {
+  font-family: "Your Preferred Font", sans-serif;
+  font-size: 24px;
+  /* Add any other styling you need */
+}
+
+#role {
+  font-weight: bold;
+}
+
+.typing {
+  border-right: 2px solid;
+  animation: blink 0.7s infinite step-end;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in animation to the entire page */
+body {
+  animation: fadeIn 2s ease-out;
+  /* Adjust the duration and easing as needed */
+}
+
+
+/* Apply globally to all elements */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
